@@ -1,13 +1,19 @@
 import React from 'react';
+import './Country.css';
 
 const Country = (props) => {
-    console.log(props);
+    const { name, flags, population, capital, region } = props.country;
+    console.log(props.country);
     return (
-        <>
-            {/* <h4>This is a single country.</h4> */}
-            <h4>This is:{props.name}</h4>
-            <p>Capital is: {props.capital} Population: {props.population}</p>
-        </>
+        <div className="country">
+            <h4>This is: {name.common}</h4>
+            <img src={flags.png} alt="" />
+            <p><small>Region: {region}</small></p>
+            <p>
+                Capital is: {capital} <br />
+                Population: {population}
+            </p>
+        </div>
     );
 };
 
