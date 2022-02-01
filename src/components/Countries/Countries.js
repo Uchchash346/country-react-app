@@ -12,7 +12,7 @@ const Countries = () => {
         <div >
             <h1>Travel the World ✈️</h1>
             <hr />
-            <h1>Hello from countries: {countries.length}</h1>
+            <h1>Total Countries: {countries.length}</h1>
             <br />
             {/* {
                 countries.map(country => console.log(country))
